@@ -46,8 +46,6 @@ def agregar_jugador():
     data = request.get_json()
  
 # Condición para verificar si el jugador es arquero o jugador de campo"
-
-#TODO: Permitir que se puedan almacenar jugadores de diferentes posiciones
     if data["posicion"] == "arquero":
         jugador = Arquero(numCamiseta=data["numCamiseta"], apellido=data["apellido"], minJugados=data["minJugados"])
     else:
